@@ -2,11 +2,11 @@ package pset2;
 
 import java.util.Scanner;
 
-public class Area_Of_Circle {
+public class Area_of_Circle {
 
 	 public static double calculateArea(double r) {
-	        final double PI = 3.142; // Value of pi
-	        return PI * r * r; // Area formula
+	        final double PI = 3.142;
+	        return PI * r * r; 
 	    }
 
 	    public static void main(String[] args) {

@@ -16,7 +16,7 @@ public class Number_Of_Days {
             return 29;
         }
 
-        return daysInMonths[month];
+        return daysInMonths[month-1];
     }
 
     public static void main(String[] args) {
