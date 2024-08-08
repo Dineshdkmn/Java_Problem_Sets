@@ -2,12 +2,11 @@ package pset2;
 
 import java.util.Scanner;
 
-public class Ocatl_Binary {
+public class Octal_Binary {
 
 	 public static String octalToBinary(String octalNumber) {
-	        // Step 1: Convert octal to decimal
 	        int decimalValue = 0;
-	        int base = 1;  // Represents 8^0 initially
+	        int base = 1;
 
 	        for (int i = octalNumber.length() - 1; i >= 0; i--) {
 	            decimalValue += (octalNumber.charAt(i) - '0') * base;
@@ -20,7 +19,7 @@ public class Ocatl_Binary {
 	        while (decimalValue > 0) {
 	            int rem = decimalValue % 2;
 	            binaryNumber = rem + binaryNumber;
-	            decimalValue = decimalValue / 2;
+	            decimalValue /= 2;
 	        }
 
 	        return binaryNumber;
